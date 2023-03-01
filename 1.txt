@@ -85,8 +85,11 @@ http:"1"是httpj接口强制 原网页解析
 普通接口-自定义写法:
 {name:"这里填 普通接口 名称",url:"这里填 普通接口 地址"},
 
-Json接口-自定义写法:
+Json接口-自定义写法（GET）:
 {name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"1"},
+
+Json接口-自定义写法（POST）:
+{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"2",data:"url=网址&ac=jx"},
 
 影视搜索-自定义写法:
 {name:"这里填 你喜欢的名称",url:"这里填搜索串地址 %s 代表关键字：比如：http://www.huamaotv.com/index.php?m=vod-search&wd=%s",vip:"强制搜索"},
