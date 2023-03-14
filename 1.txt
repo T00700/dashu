@@ -53,6 +53,8 @@ https://raw.iqiq.io/963540817/dashu/main/1.crx
 这里是 接口高级自定义参数
 https://docs.qq.com/sheet/DUGtRbWFBVEtxU29Q
 
+dm:"1"
+是不再默认关闭该接口的弹幕功能
 jyjk:"0"
 是不记忆使用该接口不记忆使用该接口
 hc:"0"
@@ -66,6 +68,7 @@ jxcss:"0"
 
 bs:"这里填你想锁定的视频倍速数字"
 是使用在线接口或插件播放器的时候，自动修改倍速播放
+
 
 
 http:"1"是httpj接口强制 原网页解析
