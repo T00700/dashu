@@ -1,19 +1,36 @@
 ﻿脚本安装地址：
 （因为作者不喜欢图标，所以本脚本有隐藏图标功能，如果你不小心隐藏了图标，电脑端 鼠标移动 到 图标原来的位置，图标会临时自动显示也可以按快捷键 Alt+/ 恢复，手机端可以点击图标原来的位置，图标会临时自动显示）
 
+主脚本（自动更新版）(以下地址随便选择一个安装):
+https://raw.iqiq.io/963540817/dashu/main/jxb.user.js
 https://raw.fastgit.org/963540817/dashu/main/jxb.user.js
-主脚本（自动更新版）
+https://raw.githubusercontent.com/963540817/dashu/main/jxb.user.js
+https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/jxb.user.js
 
+
+主脚本（手动更新版本）(以下地址随便选择一个安装):
+https://raw.iqiq.io/963540817/dashu/main/Freemovies.user.js
 https://raw.fastgit.org/963540817/dashu/main/Freemovies.user.js
-主脚本（手动更新版本）
+https://raw.githubusercontent.com/963540817/dashu/main/Freemovies.user.js
+https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/Freemovies.user.js
+
 
 脚本代码都是一样的
 
 看需要哪个安装哪个，不要同时安装
 
-111辅助脚本：https://raw.fastgit.org/963540817/dashu/main/111.user.js
+111辅助脚本(以下地址随便选择一个安装)：
+https://raw.githubusercontent.com/963540817/dashu/main/111.user.js
+https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/111.user.js
+https://raw.iqiq.io/963540817/dashu/main/111.user.js
+https://raw.fastgit.org/963540817/dashu/main/111.user.js
 
-222辅助增强脚本（进阶版，可以跟之前的辅助脚本共存，主要是可以 自定义禁止爬虫 指定接口）：https://raw.fastgit.org/963540817/dashu/main/222.user.js
+222辅助增强脚本（进阶版，可以跟之前的辅助脚本共存，主要是可以 自定义禁止爬虫 指定接口）(以下地址随便选择一个安装)：
+https://raw.iqiq.io/963540817/dashu/main/222.user.js
+https://raw.fastgit.org/963540817/dashu/main/222.user.js
+https://raw.githubusercontent.com/963540817/dashu/main/222.user.js
+https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/222.user.js
+
 
 网站规则自定义写法如下例子:
 
@@ -32,10 +49,22 @@ https://raw.fastgit.org/963540817/dashu/main/Freemovies.user.js
 
 
 
-手机 kiwi浏览器 视频全屏，自动暂停脚本：https://raw.fastgit.org/963540817/dashu/main/qp.user.js
+手机 kiwi浏览器 视频全屏，自动暂停脚本(以下地址随便选择一个安装)：
+https://raw.iqiq.io/963540817/dashu/main/qp.user.js
+https://raw.fastgit.org/963540817/dashu/main/qp.user.js
+https://raw.githubusercontent.com/963540817/dashu/main/qp.user.js
+https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/qp.user.js
 
-插件播放器：（旧版本插件播放器不支持）
+
+插件播放器：（旧版本插件播放器不支持）(以下地址随便选择一个安装)
+https://raw.iqiq.io/963540817/dashu/main/1.crx
 https://raw.fastgit.org/963540817/dashu/main/1.crx
+https://raw.githubusercontent.com/963540817/dashu/main/1.crx
+https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/1.crx
+
+
+
+
 
 在线播放器自定义：
 {name:"在A",url:"https://auete.com/api/dp.php?url=",vip:"播放器",diy:"darkorange"},
