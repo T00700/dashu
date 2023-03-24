@@ -697,7 +697,21 @@
 			"_exclude": {}
 		},
 		{
-			"enable": true,
+			"enable": false,
+			"name": "猫源解密",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/jm\\.dovxi\\.repl\\.co\\/api\\?url=",
+			"exclude": "",
+			"group": "未分组",
+			"isFunction": false,
+			"action": {
+				"name": "accept-encoding",
+				"value": "gzip"
+			}
+		},
+		{
+			"enable": false,
 			"name": "腾讯",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -725,7 +739,7 @@
 			}
 		},
 		{
-			"enable": true,
+			"enable": false,
 			"name": "奇艺",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -753,7 +767,7 @@
 			}
 		},
 		{
-			"enable": true,
+			"enable": false,
 			"name": "B站",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -764,20 +778,6 @@
 			"action": {
 				"name": "referer",
 				"value": "https://www.bilibili.com"
-			}
-		},
-		{
-			"enable": false,
-			"name": "猫源解密",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "^https?:\\/\\/jm\\.dovxi\\.repl\\.co\\/api\\?url=",
-			"exclude": "",
-			"group": "未分组",
-			"isFunction": false,
-			"action": {
-				"name": "accept-encoding",
-				"value": "gzip"
 			}
 		}
 	],
