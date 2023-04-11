@@ -37,6 +37,9 @@ https://raw.githubusercontent.com/963540817/dashu/main/222.user.js
 https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/222.user.js
 
 
+影视请求头（导入猫HD里面）
+https://raw.iqiq.io/963540817/dashu/main/1.json
+
 网站规则自定义写法如下例子:
 
 {
