@@ -66,10 +66,10 @@ https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/qp.user.js
 
 
 插件播放器：（旧版本插件播放器不支持）(以下地址随便选择一个安装)
-https://raw.iqiq.io/963540817/dashu/main/1.crx
-https://raw.fastgit.org/963540817/dashu/main/1.crx
-https://raw.githubusercontent.com/963540817/dashu/main/1.crx
-https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/1.crx
+https://raw.iqiq.io/963540817/dashu/main/%E7%8C%ABHD.crx
+https://raw.fastgit.org/963540817/dashu/main/%E7%8C%ABHD.crx
+https://raw.githubusercontent.com/963540817/dashu/main/%E7%8C%ABHD.crx
+https://ghproxy.com/raw.githubusercontent.com/963540817/dashu/main/%E7%8C%ABHD.crx
 
 
 
