@@ -3,51 +3,6 @@
 	"sendHeader": [
 		{
 			"enable": true,
-			"name": "奇艺",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "(?:71edge\\.|[\\/\\.\\-_]iqiyi[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
-			"exclude": "",
-			"group": "影视请求头",
-			"isFunction": true,
-			"action": {
-				"name": "user-agent",
-				"value": "iqiyi"
-			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='iqiyi';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP2-qiyi';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
-		},
-		{
-			"enable": true,
-			"name": "优酷",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "(?:ott\\.youku|[\\/\\-_]youku[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
-			"exclude": "",
-			"group": "影视请求头",
-			"isFunction": true,
-			"action": {
-				"name": "user-agent",
-				"value": "youku"
-			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='youku';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP4-youku';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
-		},
-		{
-			"enable": true,
-			"name": "B站",
-			"ruleType": "modifySendHeader",
-			"matchType": "regexp",
-			"pattern": "(?:\\/upgcxcode\\/|[\\/\\.\\-_]bilibili[\\/\\-_]?).*?\\.(ts|m3u8|mp4)|\\.flv",
-			"exclude": "",
-			"group": "影视请求头",
-			"isFunction": true,
-			"action": {
-				"name": "user-agent",
-				"value": "bilibili"
-			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='bilibili';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP5-bilibili';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
-		},
-		{
-			"enable": true,
 			"name": "腾讯",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
@@ -59,7 +14,7 @@
 				"name": "user-agent",
 				"value": "qq"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='qq';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP1-qq';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='qq';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-qq';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
 		},
 		{
 			"enable": true,
@@ -74,7 +29,52 @@
 				"name": "user-agent",
 				"value": "mgtv"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='mgtv';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP3-mgtv';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='mgtv';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-mgtv';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
+		},
+		{
+			"enable": true,
+			"name": "奇艺",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "(?:71edge\\.|[\\/\\.\\-_]iqiyi[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
+			"exclude": "",
+			"group": "影视请求头",
+			"isFunction": true,
+			"action": {
+				"name": "user-agent",
+				"value": "iqiyi"
+			},
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='iqiyi';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-qiyi';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
+		},
+		{
+			"enable": true,
+			"name": "优酷",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "(?:ott\\.youku|[\\/\\-_]youku[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
+			"exclude": "",
+			"group": "影视请求头",
+			"isFunction": true,
+			"action": {
+				"name": "user-agent",
+				"value": "youku"
+			},
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='youku';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-youku';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
+		},
+		{
+			"enable": true,
+			"name": "B站",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "(?:\\/upgcxcode\\/|[\\/\\.\\-_]bilibili[\\/\\-_]?).*?\\.(ts|m3u8|mp4)|\\.flv",
+			"exclude": "",
+			"group": "影视请求头",
+			"isFunction": true,
+			"action": {
+				"name": "user-agent",
+				"value": "bilibili"
+			},
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='bilibili';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-bilibili';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
 		},
 		{
 			"enable": true,
@@ -89,7 +89,7 @@
 				"name": "user-agent",
 				"value": "sohu"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='sohu';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP3-sohu';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='sohu';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-sohu';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
 		},
 		{
 			"enable": true,
@@ -104,7 +104,7 @@
 				"name": "user-agent",
 				"value": "letv"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='letv';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP3-letv';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='letv';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-letv';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
 		},
 		{
 			"enable": true,
@@ -119,7 +119,7 @@
 				"name": "user-agent",
 				"value": "wasu"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='wasu';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP4-wasu';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='true';break;}\n}"
+			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='wasu';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-wasu';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\n}"
 		}
 	],
 	"receiveHeader": [],
