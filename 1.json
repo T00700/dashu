@@ -2,11 +2,11 @@
 	"request": [],
 	"sendHeader": [
 		{
-			"enable": false,
+			"enable": true,
 			"name": "腾讯",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "(?:ts\\.qq\\.|[\\/\\.\\-_]qq[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
+			"pattern": "^https?:\\/\\/(?:v\\.qq\\.com\\/(?:x\\/(?:cover|page)|.+?\\/p\\/topic)\\/|(?:3g|m)\\.v\\.qq\\.com)",
 			"exclude": "",
 			"group": "影视请求头",
 			"isFunction": true,
@@ -14,14 +14,14 @@
 				"name": "user-agent",
 				"value": "qq"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='qq';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-qq';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
-			"enable": false,
+			"enable": true,
 			"name": "芒果",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "(?:(?:bz|api|titan)\\.mgtv\\.|[\\/\\.\\-_]mgtv[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
+			"pattern": "^https?:\\/\\/(?:(?:w(?:ww)?\\.mgtv\\.com\\/[a-z]|www\\.mgtv\\.com\\/act)\\/|(?:[^\\/]+?\\.)?m\\.mgtv\\.com\\/b\\/)",
 			"exclude": "",
 			"group": "影视请求头",
 			"isFunction": true,
@@ -29,29 +29,29 @@
 				"name": "user-agent",
 				"value": "mgtv"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='mgtv';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-mgtv';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
-			"enable": false,
+			"enable": true,
 			"name": "奇艺",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "(?:71edge\\.|[\\/\\.\\-_]iqiyi[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
+			"pattern": "^https?:\\/\\/(?:www\\.iqiyi\\.com\\/(?:[avw]_|kszt\\/)|m\\.iqiyi\\.com\\/(?:[av]_|kszt\\/|$)|www\\.iq\\.com\\/play\\/)",
 			"exclude": "",
 			"group": "影视请求头",
-			"isFunction": false,
+			"isFunction": true,
 			"action": {
 				"name": "user-agent",
 				"value": "iqiyi"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='iqiyi';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-qiyi';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
-			"enable": false,
+			"enable": true,
 			"name": "优酷",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "(?:ott\\.youku|[\\/\\-_]youku[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
+			"pattern": "^https?:\\/\\/(?:v(?:-wb)?\\.youku\\.com\\/[^\\/]+?\\/id_|vku\\.youku\\.com\\/live\\/|(?:www|m)\\.youku\\.com\\/|\\w+?\\.youku\\.com\\/$)",
 			"exclude": "",
 			"group": "影视请求头",
 			"isFunction": true,
@@ -59,84 +59,100 @@
 				"name": "user-agent",
 				"value": "youku"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='youku';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-youku';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
-			"enable": false,
+			"enable": true,
 			"name": "B站",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "(?:\\/upgcxcode\\/|[\\/\\.\\-_]bilibili[\\/\\-_]?).*?\\.(ts|m3u8|mp4)|\\.flv",
+			"pattern": "^https?:\\/\\/(?:(?:www|player)\\.bilibili\\.com\\/|m\\.bilibili\\.com\\/bangumi\\/play\\/)",
 			"exclude": "",
 			"group": "影视请求头",
-			"isFunction": false,
+			"isFunction": true,
 			"action": {
 				"name": "user-agent",
 				"value": "bilibili"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='bilibili';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-bilibili';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
-			"enable": false,
+			"enable": true,
 			"name": "搜狐",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "[\\/\\.\\-_]sohu[\\/\\-_].*?\\.(ts|m3u8|mp4|flv)",
+			"pattern": "^https?:\\/\\/(?:tv\\.sohu\\.com\\/(?:v\\/|.+?\\/index\\.shtml)|film\\.sohu\\.com\\/album\\/|m\\.tv\\.sohu\\.com\\/|tv\\.sohu\\.com\\/.+?\\/index\\.shtml)",
 			"exclude": "",
 			"group": "影视请求头",
-			"isFunction": false,
+			"isFunction": true,
 			"action": {
 				"name": "user-agent",
 				"value": "sohu"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='sohu';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-sohu';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
-			"enable": false,
+			"enable": true,
 			"name": "乐视",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "[\\/\\.\\-_]letv[\\/\\-_].*?\\.(ts|m3u8|mp4|flv)",
+			"pattern": "^https?:\\/\\/(?:www\\.le\\.com\\/ptv\\/vplay\\/|m\\.le\\.com\\/vplay_)",
 			"exclude": "",
 			"group": "影视请求头",
-			"isFunction": false,
+			"isFunction": true,
 			"action": {
 				"name": "user-agent",
 				"value": "letv"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='letv';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-letv';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
-			"enable": false,
+			"enable": true,
 			"name": "华数",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "(?:al\\.wasu|[\\/\\-_]wasu[\\/\\-_]?).*?\\.(ts|m3u8|mp4|flv)",
+			"pattern": "^https?:\\/\\/\\w+?\\.wasu\\.c.+?\\/[pP]lay\\/show\\/id\\/\\d",
 			"exclude": "",
 			"group": "影视请求头",
-			"isFunction": false,
+			"isFunction": true,
 			"action": {
 				"name": "user-agent",
 				"value": "wasu"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='wasu';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='VIP9-wasu';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "val.find(v=>v.name.toLowerCase()==='user-agent').value+='HE/2.0.0';item.ContentType='application/x-www-form-urlencoded';"
 		},
 		{
 			"enable": true,
 			"name": "全局影视请求头",
 			"ruleType": "modifySendHeader",
 			"matchType": "regexp",
-			"pattern": "\\.(ts|m3u8|mp4|flv)",
-			"exclude": "",
+			"pattern": "\\.(?:ts|m(?:3u8|p[4d])|flv)(?:#|\\?|\\\\|$)",
+			"exclude": "\\/play\\/[^\\/]+?\\/index\\.m3u8$",
 			"group": "影视请求头",
 			"isFunction": true,
 			"action": {
 				"name": "user-agent",
 				"value": "origin"
 			},
-			"code": "for(const a in val){\nif(val[a].name.toLowerCase()==='save-data'){val[a].value='on';break;}\nif(val[a].name.toLowerCase()==='referer'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='user-agent'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='from'){val[a].value='origin';break;}\nif(val[a].name.toLowerCase()==='content-security-policy'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='allowCrossProtocolRedirects'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Origin'){val[a].value='*';break;}\nif(val[a].name.toLowerCase()==='Access-Control-Allow-Credentials'){val[a].value='*';break;}\n}"
+			"code": "const headers={'accept':'*/*','from':'origin','save-data':'on','referer':'origin','connection':'close','user-agent':'origin','content-security-policy':'*','allowcrossprotocolredirects':'*','access-control-allow-origin':'*','cccess-control-allow-credentials':'*'};for(const a in val){const key=val[a].name.toLowerCase();if(headers[key]){val[a].value=headers[key];break;}}\n\n\n",
+			"_exclude": {}
 		}
 	],
-	"receiveHeader": [],
+	"receiveHeader": [
+		{
+			"enable": true,
+			"name": "主流跨域",
+			"ruleType": "modifyReceiveHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/(?:(?:www\\.ixigua\\.com\\/|m\\.ixigua\\.com\\/video\\/)\\d{10,}(?:\\?id=\\d{10,}|$)|(?:v(?:-wb)?|m)\\.youku\\.com\\/.+?\\/id_|\\w+?\\.wasu\\.c.+?\\/[pP]lay\\/show\\/id\\/\\d|www\\.fun\\.tv\\/vplay\\/g-|m\\.fun\\.tv\\/mplay\\/\\?mid=|\\w+?\\.miguvideo\\.com\\/.+?\\/detail\\.html\\?cid=\\d|[^\\/]+?\\.tudou\\.com\\/(?:v\\/|.+?\\/id_)|v\\.qq\\.com\\/(?:x\\/(?:cover|page)|.+?\\/p\\/topic)\\/|(?:3g|m)\\.v\\.qq\\.com|w(?:ww)?\\.mgtv\\.com\\/[a-z]\\/|www\\.mgtv\\.com\\/act\\/|m\\.mgtv\\.com\\/b\\/|www\\.iqiyi\\.com\\/(?:[vw]_|kszt\\/)|www\\.iq\\.com\\/play\\/|m\\.iqiyi\\.com\\/(?:v_|$)|tw\\.iqiyi\\.com\\/v_|tv\\.sohu\\.com\\/v\\/|m\\.tv\\.sohu\\.com\\/(?:u\\/|v|phone_play_film\\?aid=)|film\\.sohu\\.com\\/album\\/|www\\.le\\.com\\/ptv\\/vplay\\/|m\\.le\\.com\\/vplay_|[vm]\\.pptv\\.com\\/show\\/|(?:[^\\/]+?\\.)?1905\\.com\\/(?:m|.*?play)\\/|www\\.ixigua\\.com\\/|(?:player|live)\\.bilibili\\.com\\/|www\\.bilibili\\.com\\/(?:(?:cheese|bangumi)\\/play|blackboard|.*?video)\\/|m\\.bilibili\\.com\\/bangumi\\/play\\/|www\\.acfun\\.cn\\/(?:.+?\\/ac|bangumi\\/)|m\\.acfun\\.cn\\/v\\/|.+?(?:\\.m(?:3u8|p4)\\?\\w+?=|(?:search|jx|url|id|v|&[^\\/]+?|_\\w+?|\\.html\\?\\w+?)[&#=\\?]https?(?::\\/\\/|%3A%2F%2F)[^\\/]+?\\.(?:youku|fun|miguvideo|wasu|tudou|qq|mgtv|iqiyi|iq|sohu|le|pptv|1905|bilibili|acfun|ixigua)\\.))",
+			"exclude": "",
+			"group": "影视请求头",
+			"isFunction": false,
+			"action": {
+				"name": "access-control-allow-origin",
+				"value": "*"
+			}
+		}
+	],
 	"receiveBody": []
 }
