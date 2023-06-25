@@ -2,7 +2,7 @@
 // @name 视频解析自用版
 // @description 公益脚本，请勿上当受骗购买，请不要相信“解析”出现的一切任何形式的广告，江小白无聊作品，单纯写好玩的，任何浏览器 自带集成 此脚本 的均跟 原作者 无关
 // @description:en 2023-06-25
-// @version 100067
+// @version 100068
 // @author 江小白
 // @supportURL https://raw.githubusercontent.com/963540817/dashu/main/1.txt
 // @contributionURL https://greasyfork.s3.us-east-2.amazonaws.com/51vjt3cs5gtvcu04vp6rnyasqwn3
@@ -64,17 +64,12 @@
 {name:"光速",url:"https://api.guangsuapi.com/api.php/provide/vod/from/gsm3u8",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"飞语",url:"http://film.feiyu.vin/api.php/provide/vod/from/xlm3u8",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"量子",url:"https://cj.lziapi.com/api.php/provide/vod",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
-{name:"烟云",url:"http://cms.itcxo.cn/icciu_api.php/v1.vod",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"高清",url:"https://api.1080zyku.com/inc/apijson.php",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"爱看",url:"https://ikunzyapi.com/api.php/provide/vod/from/ikm3u8/at/json",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"非凡",url:"http://cj.ffzyapi.com/api.php/provide/vod/from/ffm3u8",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"新浪",url:"https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"闪电",url:"https://sdzyapi.com/api.php/provide/vod",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
-{name:"懒口",url:"468015",vip:"爬虫接口",gx:"1",j:"电脑"},
-{name:"猫口",url:"418804",vip:"爬虫接口",gx:"1",j:"电脑"},
-{name:"画猫",url:"https://greasyfork.org/zh-CN/scripts/418804/code/user.js",vip:"套壳脚本",j:"电脑"},
 {name:"智狐",url:"https://greasyfork.org/zh-CN/scripts/444713/code/user.js",vip:"套壳脚本",j:"电脑"},
-{name:"懒人",url:"https://greasyfork.org/zh-CN/scripts/468015/code/user.js",vip:"套壳脚本",j:"电脑"},
 {name:"更新",url:"https://greasyfork.org/zh-CN/scripts/435698/code/user.js",vip:"套壳脚本"},
 {name:"破解",url:"https://greasyfork.org/zh-CN/scripts/438657/code/user.js",vip:"套壳脚本"},
 {name:"邦宁",url:"https://video.isyour.love/player/getplayer?url=",vip:"强制搜索"},
