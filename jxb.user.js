@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name 视频解析自用版
 // @description 公益脚本，请勿上当受骗购买，请不要相信“解析”出现的一切任何形式的广告，江小白无聊作品，单纯写好玩的，任何浏览器 自带集成 此脚本 的均跟 原作者 无关
-// @description:en 2023-07-04
+// @description:en 2023-07-05
 // @version 100075
 // @author 江小白
 // @supportURL https://raw.githubusercontent.com/963540817/dashu/main/1.txt
@@ -70,7 +70,7 @@
 {name:"新浪",url:"https://api.xinlangapi.com/xinlangapi.php/provide/vod/from/xlm3u8",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"闪电",url:"https://sdzyapi.com/api.php/provide/vod",json:"3",jxb:"原",zd:"1",qp:"1",diy:"#33CC99",cjdiy:"#33CC99",title:"非解析,资源网采集播放,备用"},
 {name:"玩的嗨",url:"http://cdn.wandhi.com/js/tv/player.js",vip:"爬虫接口",j:"电脑"},
-{name:"懒人",url:"https://scriptcat.org/scripts/code/61/.user.js",vip:"爬虫接口",j:"电脑"},
+{name:"懒人",url:"467776",vip:"爬虫接口",j:"电脑"},
 {name:"智狐",url:"https://greasyfork.org/zh-CN/scripts/444713/code/user.js",vip:"套壳脚本",j:"电脑"},
 {name:"更新",url:"https://greasyfork.org/zh-CN/scripts/435698/code/user.js",vip:"套壳脚本"},
 {name:"破解",url:"https://greasyfork.org/zh-CN/scripts/438657/code/user.js",vip:"套壳脚本"},
