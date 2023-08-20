@@ -2,7 +2,7 @@
 // @name 视频解析自用版
 // @description 公益脚本，请勿上当受骗购买，请不要相信“解析”出现的一切任何形式的广告，江小白无聊作品，单纯写好玩的，任何浏览器 自带集成 此脚本 的均跟 原作者 无关
 // @description:en 2023-08-21
-// @version 100013
+// @version 100100
 // @author 江小白
 // @supportURL https://raw.githubusercontent.com/963540817/dashu/main/1.txt
 // @contributionURL https://greasyfork.s3.us-east-2.amazonaws.com/51vjt3cs5gtvcu04vp6rnyasqwn3
