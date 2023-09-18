@@ -150,19 +150,22 @@ http:"1"是httpj接口强制 原网页解析
 
 
 普通接口-自定义写法:
-{name:"这里填 普通接口 名称",url:"这里填 普通接口 地址"},
+{name:"这里填 普通接口 名称",url:"这里填 普通接口 地址",jxb:"原",zd:"1",qp:"1"},
 
 Json接口-自定义写法（GET）:
-{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"1"},
+{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"1",jxb:"原",zd:"1",qp:"1"},
 
-Json接口-轮询并发写法（GET）:
-{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址1|这里填 Json接口 地址2|这里填 Json接口 地址3",json:"1"},
+Json接口-轮询并发写法（GET）（随机接口请求）:
+{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址1|这里填 Json接口 地址2|这里填 Json接口 地址3",json:"1",jxb:"原",zd:"1",qp:"1"},
+
+Json接口-轮询并发写法（GET）（顺序接口请求）:
+{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址1|这里填 Json接口 地址2|这里填 Json接口 地址3",json:"1",jxb:"原",zd:"1",qp:"1",ms:"1"},
 
 Json接口-自定义写法（POST）:
-{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"2",data:"url=网址&ac=jx"},
+{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"2",data:"url=网址&ac=jx",jxb:"原",zd:"1",qp:"1"},
 
 采集源解析
-{name:"这里填 采集源 名称",url:"这里填 采集源 地址",json:"3"},
+{name:"这里填 采集源 名称",url:"这里填 采集源 地址",json:"3",jxb:"原",zd:"1",qp:"1"},
 
 影视搜索-自定义写法:
 {name:"这里填 你喜欢的名称",url:"这里填搜索串地址 %s 代表关键字：比如：http://www.huamaotv.com/index.php?m=vod-search&wd=%s",vip:"强制搜索"},
