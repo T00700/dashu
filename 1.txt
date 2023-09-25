@@ -102,6 +102,8 @@ https://raw.githubusercontent.com/963540817/dashu/main/%E7%8C%ABHD.crx
 这里是 接口高级自定义参数
 https://docs.qq.com/sheet/DUGtRbWFBVEtxU29Q
 
+qc:"0" 
+关闭接口自动去重
 dm:"1"
 是不再默认关闭该接口的弹幕功能
 jyjk:"0"
