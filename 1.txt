@@ -157,11 +157,8 @@ http:"1"是httpj接口强制 原网页解析
 Json接口-自定义写法（GET）:
 {name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"1",jxb:"原",zd:"1",qp:"1"},
 
-Json接口-轮询并发写法（GET）（随机接口请求）:
+Json接口-轮询并发写法（GET）:
 {name:"这里填 Json接口 名称",url:"这里填 Json接口 地址1|这里填 Json接口 地址2|这里填 Json接口 地址3",json:"1",jxb:"原",zd:"1",qp:"1"},
-
-Json接口-轮询并发写法（GET）（顺序接口请求）:
-{name:"这里填 Json接口 名称",url:"这里填 Json接口 地址1|这里填 Json接口 地址2|这里填 Json接口 地址3",json:"1",jxb:"原",zd:"1",qp:"1",ms:"1"},
 
 Json接口-自定义写法（POST）:
 {name:"这里填 Json接口 名称",url:"这里填 Json接口 地址",json:"2",data:"url=网址&ac=jx",jxb:"原",zd:"1",qp:"1"},
