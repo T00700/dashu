@@ -104,6 +104,8 @@ https://docs.qq.com/sheet/DUGtRbWFBVEtxU29Q
 
 qc:"0" 
 关闭接口自动去重
+hs:"0" 
+关闭接口耗时提示
 dm:"1"
 是不再默认关闭该接口的弹幕功能
 jyjk:"0"
