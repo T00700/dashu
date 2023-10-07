@@ -31,7 +31,6 @@
 // @grant GM_deleteValue
 // @grant GM_notification
 // @grant GM_setClipboard
-// @grant GM_setClipborad
 // @grant GM_xmlhttpRequest
 // @grant GM_getResourceURL
 // @grant GM_getResourceText
