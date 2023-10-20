@@ -63,7 +63,7 @@ https://raw.githubusercontent.com/963540817/dashu/main/222.user.js
 https://greasyfork.org/zh-CN/scripts/463378.js
 
 手机 kiwi浏览器 视频全屏：
-https://greasyfork.org/zh-CN/scripts/375806.js
+https://greasyfork.org/zh-CN/scripts/375806
 
 
 
