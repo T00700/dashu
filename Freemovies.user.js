@@ -2,7 +2,7 @@
 // @name 公益脚本，请勿上当受骗购买
 // @description 请不要相信“解析”出现的一切任何形式的广告，江小白无聊作品，单纯写好玩的，任何浏览器 自带集成 此脚本 的均跟 原作者 无关
 // @description:tw 脚本已经完善，更新告一段落。
-// @description:en 2024-01-26
+// @description:en 2024-01-27
 // @version 1
 // @author 江小白
 // @supportURL https://raw.githubusercontent.com/963540817/dashu/main/1.txt
