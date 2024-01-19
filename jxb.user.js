@@ -68,6 +68,8 @@
 {name:"无尽",url:"https://api.wujinapi.me",json:"3",hc:"0",zd:"1",qp:"1",px:"1",diy:"aliceblue",cjdiy:"#33CC99",sj:"0",title:"非解析,资源网采集播放,备用"},
 {name:"飞速",url:"https://www.feisuzyapi.com",json:"3",hc:"0",zd:"1",qp:"1",px:"1",diy:"aliceblue",cjdiy:"#33CC99",sj:"0",title:"非解析,资源网采集播放,备用"},
 {name:"天空",url:"https://m3u8.tiankongapi.com",json:"3",hc:"0",zd:"1",qp:"1",px:"1",diy:"aliceblue",cjdiy:"#33CC99",sj:"0",title:"非解析,资源网采集播放,备用"},
+{name:"八戒",url:"http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php",json:"3",hc:"0",zd:"1",qp:"1",px:"1",diy:"aliceblue",cjdiy:"#33CC99",sj:"0",cj:"?wd=",cjjc:"3",一级:"data",title:"非解析,资源网采集播放,备用"},
+{name:"淘片",url:"http://tv.benmx.com",json:"3",hc:"0",zd:"1",qp:"1",px:"1",diy:"aliceblue",cjdiy:"#33CC99",sj:"0",bq:"1",cj:"/cjapi/mc10/vod/json?ac=detail&wd=",jc:"/openapi/template/vod/brief/",一级:"info",二级:"playLines",三级:"addr",title:"非解析,资源网采集播放,备用"},
 {name:"金鹰",url:"https://jyzyapi.com",json:"3",hc:"0",zd:"1",qp:"1",sj:"0",title:"疑识有插播广告,非解析,资源网采集播放,备用"},
 /* 以下是来自爬虫其他的解析脚本里面的解析接口到本脚本使用 */
 {name:"懒人口",url:"https://gitlab.com/lanhaha/lanrenjiaoben/-/raw/main/jx.user.js",vip:"爬虫接口"},
